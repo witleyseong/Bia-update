@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creche App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app">
+        <h1>Atualizações da Creche</h1>
+        <form id="updateForm">
+            <label for="activity">Atividade:</label>
+            <select id="activity">
+                <option value="fralda">Troca de Fralda</option>
+                <option value="refeicao">Cafe da manha</option>
+                <option value="refeicao">Almoco</option>
+                <option value="refeicao">Tea</option>
+                <option value="soneca">Soneca</option>
+            </select>
+            <label for="details">Detalhes:</label>
+            <input type="text" id="details" placeholder="Detalhes da atividade">
+            <label for="photo">Upload de Foto:</label>
+            <input type="file" id="photo" accept="image/*">
+            <button type="button" onclick="addUpdate()">Adicionar Atualização</button>
+        </form>
+        <div id="updates">
+            <h2>Últimas Atualizações</h2>
+            <ul id="updatesList"></ul>
+        </div>
+        <div id="photoPreview"><h2>Preview da Foto</h2></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
